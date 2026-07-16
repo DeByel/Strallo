@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body {
+    overflow: auto;
+}
+
+.auth-form.register-form {
+    padding: 32px 16px;
+    justify-content: center;
+    min-height: auto;
+    gap: 16px;
+}
+
+.auth-stepper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.auth-step-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--auth-border-color-muted);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.auth-step-dot.active {
+    background-color: var(--auth-accent-color);
+    transform: scale(1.1);
+}
+
+.auth-register-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.auth-step {
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.auth-step.active {
+    display: flex;
+}
+
+.auth-role-selector {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.auth-role-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 140px;
+    background-color: var(--auth-input-background);
+    padding: 14px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.auth-role-option:hover {
+    outline: solid 1px var(--auth-accent-color);
+}
+
+.auth-role-option input {
+    width: auto;
+    accent-color: var(--auth-accent-color);
+}
+
+.auth-role-option span {
+    font-weight: 600;
+}
+
+.auth-extra-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-extra-fields.hidden {
+    display: none;
+}
+
+.auth-form-actions {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    gap: 12px;
+}
+
+.auth-primary-button,
+.auth-secondary-button {
+    width: auto;
+    min-width: 120px;
+    padding: 12px 18px;
+}
+
+.auth-secondary-button {
+    background-color: transparent;
+    color: var(--auth-text-color-primary);
+    outline: solid 1px var(--auth-border-color-muted);
+}
+
+.auth-secondary-button:hover {
+    background-color: var(--auth-input-background);
+}
+
+.auth-form-message {
+    min-height: 24px;
+    color: var(--auth-accent-color);
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.auth-link-row {
+    font-weight: 400;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 900px) {
+    .auth-page-container {
+        flex-direction: column;
+    }
+
+    .auth-image-panel {
+        display: none;
+    }
+
+    .auth-form {
+        width: 100%;
+        min-height: auto;
+        padding: 28px 20px;
+    }
+
+    .auth-input-group,
+    .auth-form-actions {
+        width: 100%;
+    }
+}

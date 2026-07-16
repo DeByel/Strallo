@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strallo</title>
+        <link rel="stylesheet" href="/src/auth/authglobal.css">
+        <link rel="stylesheet" href="/src/auth/authform.css">
+        <link rel="shortcut icon" href="/assets/ico/favicon.ico"
+            type="image/x-icon">
+    </head>
+
+    <body>
+        <main>
+            <div class="auth-page-container">
+                <img class="auth-image-panel"
+                    src="/assets/images/macos-monterey-stock-orange-light-layers-5k-6016x6016-5894.jpg"
+                    alt="imagem de fundo de login">
+                <div class="auth-form register-form">
+                    <img class="auth-logo"
+                        src="/assets/ico/Strallo (logo symbol) (upscale).png"
+                        alt="logotipo">
+
+                    <div class="auth-stepper" aria-label="Etapas do cadastro">
+                        <span class="auth-step-dot active"></span>
+                        <span class="auth-step-dot"></span>
+                        <span class="auth-step-dot"></span>
+                    </div>
+
+                    <h1>Crie sua conta</h1>
+                    <h2>Sua bagunça resolvida em alguns cliques</h2>
+
+                    <form class="auth-register-form" id="registerForm">
+                        <div class="auth-step active">
+                            <div class="auth-input-group">
+                                <div class="auth-field-label">
+                                    <p>Dados pessoais</p>
+                                    <img
+                                        src="/assets/icons/account_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                                        alt="icone de pessoa">
+                                </div>
+                                <input type="text" name="nome"
+                                    placeholder="Nome">
+                                <input type="text" name="sobrenome"
+                                    placeholder="Sobrenome">
+                                <input type="email" name="email"
+                                    placeholder="E-mail">
+                            </div>
+                        </div>
+
+                        <div class="auth-step">
+                            <div class="auth-input-group">
+                                <div class="auth-field-label">
+                                    <p>Tipo de usuário</p>
+                                    <img
+                                        src="/assets/icons/school_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                                        alt="icone de usuário">
+                                </div>
+                                <div class="auth-role-selector">
+                                    <label class="auth-role-option">
+                                        <input type="radio" name="role"
+                                            value="aluno" checked>
+                                        <span>Aluno</span>
+                                    </label>
+                                    <label class="auth-role-option">
+                                        <input type="radio" name="role"
+                                            value="professor">
+                                        <span>Professor</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="auth-step">
+                            <div class="auth-input-group">
+                                <div class="auth-field-label">
+                                    <p>Informações adicionais</p>
+                                    <img
+                                        src="/assets/icons/school_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                                        alt="icone de escola">
+                                </div>
+
+                                <div class="auth-extra-fields"
+                                    id="studentFields">
+                                    <input type="text" name="serie"
+                                        placeholder="Série">
+                                    <input type="text" name="curso"
+                                        placeholder="Curso">
+                                    <input type="text" name="instituicao"
+                                        placeholder="Instituição de ensino">
+                                </div>
+
+                                <div class="auth-extra-fields hidden"
+                                    id="teacherFields">
+                                    <input type="text" name="disciplina"
+                                        placeholder="Disciplina que ensina">
+                                    <input type="text" name="areaConhecimento"
+                                        placeholder="Área de conhecimento">
+                                    <input type="text" name="escolas"
+                                        placeholder="Escolas que atua">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="auth-form-actions">
+                            <button class="auth-secondary-button hidden"
+                                id="backBtn" type="button">Voltar</button>
+                            <button class="auth-primary-button" id="nextBtn"
+                                type="button">Continuar</button>
+                            <button class="auth-primary-button hidden"
+                                id="submitBtn" type="submit">Cadastrar</button>
+                        </div>
+
+                        <p class="auth-form-message" id="formMessage"></p>
+                        <p class="auth-link-row">Já sabe como funciona? <a
+                                href="login.html">Entre aqui</a></p>
+                    </form>
+
+                    <div class="auth-divider">
+                        <hr>
+                        <p>Ou</p>
+                        <hr>
+                    </div>
+                    <div class="auth-social-buttons">
+                        <button class="auth-social-button-google" type="button">
+                            <img
+                                src="/assets/icons/google-logo.png"
+                                alt="logotipo do google"> Google </button>
+                        <button class="auth-social-button-facebook"
+                            type="button"> <img
+                                src="/assets/icons/2023_Facebook_icon.svg.png"
+                                alt="logotipo de facebook">Facebook</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="/src/auth/auth.js"></script>
+    </body>
+</html>

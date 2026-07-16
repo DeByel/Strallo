@@ -1,14 +1,17 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
 html {
+    min-height: 100vh;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    overflow: hidden;
-}
-
-img {
-  mix-blend-mode: screen;
+    background-color: rgb(41, 41, 41);
 }
