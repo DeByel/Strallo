@@ -13,5 +13,8 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: rgb(41, 41, 41);
+}
+
+img {
+    mix-blend-mode: screen;
 }

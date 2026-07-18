@@ -5,10 +5,10 @@
     --auth-input-background: #313131;
     --auth-text-color-primary: aliceblue;
     --auth-text-color-secondary: rgb(143, 143, 143);
-    --auth-accent-color: #d3841e;
+    --auth-accent-color: #FF5E00;
     --auth-accent-color-hover: #f29a2f;
     --auth-button-background: #ffffff;
-    --auth-button-background-hover: rgb(202, 202, 202);
+    --auth-button-background-hover: rgb(63, 63, 63);
     --auth-border-color-muted: #535353;
 }
 
@@ -83,7 +83,6 @@ input::placeholder {
 
 .image-login,
 .auth-image-panel {
-    background: url(/assets/images/macos-monterey-stock-orange-light-layers-5k-6016x6016-5894.jpg);
     background-size: cover;
     background-position: center;
     width: 50%;
